@@ -15,7 +15,7 @@ def checkNumberic(value):
 
 
 def calcu_total(prices, quantities):
-    for price,quantity in zip(prices,quantities):
+    for price, quantity in zip(prices, quantities):
         total_sum = total_sum + (price * quantity)
 
     return total_sum
@@ -47,3 +47,5 @@ print("Enter the quantity of item 3:", end=' ')
 input_quantity_3 = input()
 quantity2 = checkNumberic(input_quantity_3)
 quantities.append(quantity3)
+
+print("Subtotal {total}".format(total=calcu_total(prices, quantities)))
